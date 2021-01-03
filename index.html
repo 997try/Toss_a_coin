@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="IvanSmirnov">
+    <link rel="stylesheet" href="style.css">
+    <title>Button</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="content">
+                <img class="content-item" src="img/money.png">
+                <p class="result">Решка</p>
+                <button class="buttonDrop">
+                    Подбросить монетку
+                </button>
+            </div>
+            <aside class="statistics statistics--hidden">
+                <button class="buttonStatisticShown"></button>
+                <section class="statistics-items">
+                    <h2 class="statistics-header">Статистика</h2>
+                    <p class="statistics-item">Количество бросков: <span class="sumDrop"></span></p>
+                    <p class="statistics-item">Орел выпал: <span class="sumDropEagle">0</span></p>
+                    <p class="statistics-item">Процент выпадания <br> орла: <span class="percentDropEagle">0</span> %</p>
+                    <p class="statistics-item">Решка выпала: <span class="sumDropTails">0</span></p>
+                    <p class="statistics-item">Процент выпадания <br> решки: <span class="percentDropTails">0</span> %</p>
+                
+                </section>
+                
+            </aside>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

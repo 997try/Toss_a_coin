@@ -1,0 +1,105 @@
+html, body {
+    margin: 0 ;
+    background-color: rgb(40, 46, 44);
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100vw;
+    
+}
+.content-item{
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    
+}
+.result{
+    color: yellow;
+    font-size: 1.3rem;
+    text-align: center;`
+}
+.buttonDrop{
+    font-size: 1.2rem;
+    appearance: none;
+    margin: 0 auto;
+    height: 2.5rem;
+    background-color:orange;
+    border: 1px solid yellow;
+    box-shadow: 3px 3px 5px yellow;
+}
+.buttonDrop:hover{
+    cursor: pointer;
+    background-color:rgb(255, 145, 0);
+}
+.statistics{ 
+    display: flex;
+    position: fixed;
+    width: 240px;
+    right: -185px;
+    height: 100%;
+    color: tomato;
+}
+.buttonStatisticShown{
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    background-image:url('img/ButtonStatistics.png') ;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    margin: auto 0;
+}
+.buttonStatisticShown:hover{
+    cursor: pointer;
+    border: 1px solid orange;
+}
+.statistics-items{
+    margin: auto 10px;
+}
+    
+.active{
+    animation: bounce 1s;
+}
+@keyframes bounce {
+	0%{
+		transform: translateY(0);
+    }
+    10%{
+		transform: translateY(-10px);
+    }
+    20%{
+		transform: translateY(-20px);
+    }
+    30%{
+		transform: translateY(-30px);
+    }
+    40%{
+		transform: translateY(-40px);
+    }
+    50%{
+		transform: translateY(-50px);
+    }
+    60%{
+		transform: translateY(-60px);
+    }
+    70%{
+		transform: translateY(-70px);
+    }
+    80%{
+		transform: translateY(-80px);
+    }
+    90%{
+		transform: translateY(-90px);
+    }
+    100%{
+		transform: translateY(-100px);
+	}
+
+}
