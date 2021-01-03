@@ -11,8 +11,7 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 80%;
-    width: 100vw;
-    
+    width: 100vw;   
 }
 .content-item{
     max-width: 200px;
@@ -24,7 +23,7 @@ html, body {
 .result{
     color: yellow;
     font-size: 1.3rem;
-    text-align: center;`
+    text-align: center;
 }
 .buttonDrop{
     font-size: 1.2rem;
@@ -34,6 +33,7 @@ html, body {
     background-color:orange;
     border: 1px solid yellow;
     box-shadow: 3px 3px 5px yellow;
+    z-index: 999;
 }
 .buttonDrop:hover{
     cursor: pointer;
@@ -42,10 +42,11 @@ html, body {
 .statistics{ 
     display: flex;
     position: fixed;
+    height: 80vh;
     width: 240px;
     right: -185px;
     height: 100%;
-    color: tomato;
+    color: tomato;  
 }
 .buttonStatisticShown{
     width: 50px;
@@ -72,34 +73,46 @@ html, body {
 		transform: translateY(0);
     }
     10%{
-		transform: translateY(-10px);
+		transform: translateY(-100%);
     }
     20%{
-		transform: translateY(-20px);
+		transform: translateY(-200%);
     }
     30%{
-		transform: translateY(-30px);
+		transform: translateY(-300%);
     }
     40%{
-		transform: translateY(-40px);
+		transform: translateY(-400%);
     }
     50%{
-		transform: translateY(-50px);
+		transform: translateY(-500%);
     }
     60%{
-		transform: translateY(-60px);
+		transform: translateY(-600%);
     }
     70%{
-		transform: translateY(-70px);
+		transform: translateY(-700%);
     }
     80%{
-		transform: translateY(-80px);
+		transform: translateY(-800%);
     }
     90%{
-		transform: translateY(-90px);
+		transform: translateY(-900%);
     }
     100%{
-		transform: translateY(-100px);
+		transform: translateY(0%);
 	}
 
+}
+@media (max-width:570px){
+  .statistics-items{
+    background-color:  rgb(40, 46, 44);
+    border: 2px solid orange;
+    padding: 5px;
+  }
+}
+@media (max-height:365px){
+  .content {
+    height: 90%; 
+}
 }

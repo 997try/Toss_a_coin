@@ -47,7 +47,7 @@ function dropMoney() {
     percentDropTailsDocument.textContent = String(percentDropTails);
 }
 buttonDrop.onclick = function () {
-    result.textContent = ''
+    result.textContent = ' '
     img.classList.add('active');
     setTimeout(() => {
         img.classList.remove('active');
