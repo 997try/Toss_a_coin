@@ -52,7 +52,7 @@ html, body {
     width: 50px;
     height: 50px;
     appearance: none;
-    background-image:url('img/ButtonStatistics.png') ;
+    background-image:url('img/buttonStatistics.png') ;
     border: 1px solid yellow;
     border-radius: 50%;
     margin: auto 0;
