@@ -27,7 +27,7 @@ function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 }
-function dropMoney() {
+function dropCoin() {
     let resultDrop = randomInteger(1,10);
     console.log(resultDrop);
     sumDrop++ ;
@@ -52,6 +52,6 @@ buttonDrop.onclick = function () {
     setTimeout(() => {
         img.classList.remove('active');
         console.log('Удалил')
-        dropMoney();
+        dropCoin();
     }, 1000);
 }
