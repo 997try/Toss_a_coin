@@ -1,7 +1,7 @@
 html, body {
     margin: 0 ;
     background-color: rgb(40, 46, 44);
-    
+    height: 100vh;
 }
 .container{
     height: 100vh;
@@ -10,7 +10,6 @@ html, body {
 .content {
     display: flex;
     flex-direction: column;
-    height: 80%;
     width: 100vw;   
 }
 .content-item{
@@ -28,7 +27,7 @@ html, body {
 .buttonDrop{
     font-size: 1.2rem;
     appearance: none;
-    margin: 0 auto;
+    margin: 0 auto 20vh;
     height: 2.5rem;
     background-color:orange;
     border: 1px solid yellow;
@@ -47,6 +46,9 @@ html, body {
     right: -185px;
     height: 100%;
     color: tomato;  
+}
+.statistics-header{
+  text-align: center;
 }
 .buttonStatisticShown{
     width: 50px;
@@ -110,9 +112,23 @@ html, body {
     border: 2px solid orange;
     padding: 5px;
   }
+  .buttonDrop{
+    z-index: 0;
+  }
 }
 @media (max-height:365px){
   .content {
     height: 90%; 
+  }
+  .buttonDrop{
+    margin-bottom: 10vh;
+  }
+  .content-item{
+    max-width: 150px;
+  }
 }
+@media (min-height:567px){
+  .buttonDrop{
+    z-index: 999;
+  }
 }
